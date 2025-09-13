@@ -1,0 +1,24 @@
+<form class="form-header" onsubmit="return false;" method="GET">
+  <input #myInput type="text"  class="au-input au-input-xl"
+         placeholder="Search for data ..."
+         (input)="doSearch(myInput.value)"/>
+
+  <button (click)="doSearch(myInput.value)"  class="au-btn-submit" >
+    Search
+  </button>
+</form>
+
+<!--
+ difference between (keyup.enter) and  (input)
+ -->
+
+<!--<form class="form-header" onsubmit="return false;" method="GET">-->
+<!--  <input #myInput type="text"  class="au-input au-input-xl"-->
+<!--         placeholder="Search for data ..."-->
+<!--         (keyup.enter)="doSearch(myInput.value)"/>-->
+
+<!--  <button (click)="doSearch(myInput.value)"  class="au-btn-submit" >-->
+<!--    Search-->
+<!--  </button>-->
+<!--</form>-->
+

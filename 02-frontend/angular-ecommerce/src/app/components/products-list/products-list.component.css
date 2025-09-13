@@ -1,0 +1,58 @@
+.product-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Keeps content aligned */
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  background: white;
+  margin-bottom: 15px; /* Reduce bottom space */
+  height: 100%; /* Ensures all cards have equal height */;
+
+}
+.product-box h1 {
+  margin-bottom: 5px; /* Reduce space below the name */
+  padding-bottom: 0;
+  border-bottom: none; /* Ensure no underline is present */
+}
+
+.price {
+  margin-top: 5px; /* Reduce space between name and price */
+  padding-top: 0;
+  border-top: none;
+}
+
+.product-box:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.product-card img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-box:hover .product-card img {
+  transform: scale(1.1); /* Zoom the image */
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  position: relative;
+  gap: 10px 0;
+}
+
+.col-md-3 {
+  padding-bottom: 5px; /* Reduce spacing between rows */
+}
+.footer-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust as needed */
+  width: 100%;
+}
